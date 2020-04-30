@@ -1,0 +1,56 @@
+@media (min-width: 376px) and (max-width: 1439px) {
+  #navbar {
+    ul {
+      li {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  #main-content {
+    .content {
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      div {
+        padding: 0 10rem 2rem;
+      }
+
+      .fylo-works-link {
+        width: 19%;
+      }
+    }
+
+    #review-quote {
+      width: 40%;
+      margin: 3rem auto;
+
+      .review-quote-info {
+        padding: 0;
+
+        .review-img {
+          padding: 0;
+        }
+
+        .review-quote-name {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  #get-started {
+    height: 30vh;
+
+    .get-started-items {
+      padding: 3rem 0;
+
+      .get-started-content {
+        h3 {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}

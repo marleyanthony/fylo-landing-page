@@ -1,0 +1,292 @@
+// Variables
+$dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$gray-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+// Google Font: Headings, call-to-actions, header navigation
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+// font-family: 'Raleway', sans-serif; 
+
+// Google Font: body 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+// font-family: 'Open Sans', sans-serif;
+
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+#navbar {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+
+  img {
+    height: 2rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+#header {
+  text-align: center;
+
+  img {
+    height: 15rem;
+    margin-top: 5rem;
+  }
+
+  .content {
+    width: 85%;
+    margin: 1rem auto;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+  }
+
+  #header-email-input {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+
+  #header-btn {
+    width: 100%;
+    border: 1px solid $bright-blue;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    background-color: $bright-blue;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+}
+
+#main-content {
+  background-color: $gray-blue;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 0 0 2rem;
+
+  .main-content-img {
+    height: 15rem;
+    margin: 5rem 0;
+  }
+
+  .content {
+    h3 {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    div {
+      text-align: left;
+      padding: 1rem;
+
+      p {
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    .fylo-works-link {
+      border-bottom: 1px solid green;
+      width: 39%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 0 0.4rem;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+        color: green;
+        font-size: 0.8rem;
+      }
+
+      img {
+        margin-left: 0.7rem;
+      }
+    }
+  }
+
+  #review-quote {
+    margin: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: left;
+
+    p {
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+
+    img {
+      margin-bottom: 0.5rem;
+    }
+
+    .review-quote-info {
+      display: flex;
+      margin-top: 1rem;
+
+      img {
+        height: 2rem;
+        border-radius: 50%;
+      }
+
+      .review-quote-name {
+        margin-left: 0.5rem;
+        margin-top: 0.2rem;
+      }
+
+      h5 {
+        font-size: 0.5rem;
+        font-weight: bold;
+        flex-direction: column;
+      }
+
+      p {
+        font-size: 0.5rem;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+#get-started {
+  background-color: $desaturated-blue;
+  height: 50vh;
+  color: #fff;
+
+  .get-started-items {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 25% 0;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+  }
+
+  .get-started-inputs {
+    input[type=email] {
+      margin: 0 auto 0.5rem;
+      padding: 0.5rem 1rem;
+      width: 80%;
+    }
+
+    input[type=button] {
+      background-color: $bright-blue;
+      padding: 0.5rem 1rem;
+      width: 80%;
+      border: none;
+      border-radius: 2px;
+      color: #fff;
+    }
+  }
+}
+
+#footer {
+  padding: 4rem 2rem;
+  background-color: $dark-blue;
+  color: #fff;
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  .phone,
+  .email {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+
+  .email {
+    margin-bottom: 2rem;
+  }
+
+  .footer-nav {
+    ul {
+      margin-bottom: 3rem;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .social-icons {
+    text-align: center;
+
+    i {
+      margin-right: 1rem;
+      border: 1px solid white;
+      padding: 6px 5px 6px 5px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Media Query
+@import 'desktop';
+@import 'tablet';
